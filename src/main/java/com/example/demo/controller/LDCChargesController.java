@@ -42,7 +42,7 @@ public class LDCChargesController {
 
 	@PatchMapping("/{chargeid}")
 	public String updateAll(@PathVariable Integer chargeid, @RequestBody ChargesModel model) {
-		ldcchargesservice.updateAll(chargeid, model);
+		ldcchargesservice.updateAll(chargeid, model) ;
 		return "updated details Successfully";
 	}
 
